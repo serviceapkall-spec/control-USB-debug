@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu id="support" version="1">
+    <title>Support</title>
+
+    <description>
+        ติดต่อร้าน PKALL SERVICE
+        เมนูนี้ไม่จำเป็นต้องเชื่อมต่อ ADB
+    </description>
+
+    <usage>
+        <line>โทรหรือแวะมาที่ร้านเมื่อกล่องมีปัญหา</line>
+    </usage>
+
+    <!-- type="text" แสดงข้อความ / type="url" เปิดลิงก์ (ถ้ากล่องมีเบราว์เซอร์) -->
+    <item
+        id="phone"
+        title="โทร 082-233-1847"
+        description="PKALL SERVICE"
+        type="text"
+        value="PKALL SERVICE&#10;โทร 082-233-1847" />
+
+    <item
+        id="address"
+        title="ที่อยู่ร้าน"
+        description="อ.ม่วงสามสิบ จ.อุบลราชธานี"
+        type="text"
+        value="PKALL SERVICE&#10;429 ม.10 ถ.ชยางกูร ต.ม่วงสามสิบ&#10;อ.ม่วงสามสิบ จ.อุบลราชธานี&#10;โทร 082-233-1847" />
+</menu>

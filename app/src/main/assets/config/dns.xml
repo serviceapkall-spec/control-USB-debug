@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu id="dns" version="1">
+    <title>DNS</title>
+
+    <description>
+        ใช้สำหรับตั้งค่า Private DNS ของ Android TV
+        เลือกผู้ให้บริการที่ต้องการ แล้วแอปจะส่งคำสั่งผ่าน Local ADB
+    </description>
+
+    <usage>
+        <line>1. ต้องเชื่อมต่อ ADB ให้สำเร็จก่อน</line>
+        <line>2. เลือก DNS ที่ต้องการ</line>
+        <line>3. กด OK เพื่อยืนยันการเปลี่ยนค่า</line>
+    </usage>
+
+    <item
+        id="dns_google"
+        title="Google DNS"
+        description="ตั้งค่า Private DNS เป็น dns.google"
+        action="DNS_GOOGLE"
+        confirm="true" />
+
+    <item
+        id="dns_cloudflare"
+        title="Cloudflare DNS"
+        description="ตั้งค่า Private DNS เป็น Cloudflare"
+        action="DNS_CLOUDFLARE"
+        confirm="true" />
+
+    <item
+        id="dns_auto"
+        title="Automatic DNS"
+        description="กลับไปใช้ Private DNS แบบอัตโนมัติ"
+        action="DNS_AUTO"
+        confirm="true" />
+
+    <item
+        id="dns_off"
+        title="Disable Private DNS"
+        description="ปิดการใช้งาน Private DNS"
+        action="DNS_OFF"
+        confirm="true" />
+</menu>

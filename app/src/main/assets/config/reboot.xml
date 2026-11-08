@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu id="reboot" version="1">
+    <title>Reboot Mode</title>
+
+    <description>
+        ใช้สำหรับรีสตาร์ท Android TV เข้าสู่โหมดต่าง ๆ
+        กรุณาบันทึกงานหรือหยุดการใช้งานที่สำคัญก่อนสั่งรีบูต
+    </description>
+
+    <usage>
+        <line>1. ต้องเชื่อมต่อ ADB ให้สำเร็จก่อน</line>
+        <line>2. เลือกโหมดที่ต้องการ</line>
+        <line>3. กด OK เพื่อยืนยัน</line>
+    </usage>
+
+    <item
+        id="reboot_normal"
+        title="Restart"
+        description="รีสตาร์ท Android TV ตามปกติ"
+        action="REBOOT_NORMAL"
+        confirm="true" />
+
+    <item
+        id="reboot_recovery"
+        title="Recovery Mode"
+        description="รีสตาร์ทเครื่องเข้าสู่ Recovery Mode"
+        action="REBOOT_RECOVERY"
+        confirm="true"
+        warning="ออกจาก Recovery: เลือก Reboot system now ด้วยรีโมท ห้ามเลือก Wipe data / Factory reset ถ้าไม่ตั้งใจล้างเครื่อง" />
+
+    <item
+        id="boot_update"
+        title="BOOT Mode"
+        description="รีสตาร์ทเครื่องเข้าสู่ usb boot (โหมดอัปเดต / USB Burning)"
+        action="REBOOT_UPDATE"
+        confirm="true"
+        warning="จอจะดำหรือค้างที่โลโก้ ซึ่งเป็นปกติของโหมดนี้ ออกโดยถอดปลั๊กไฟทิ้งไว้ 10 วินาทีแล้วเสียบใหม่ (ถ้าไม่ได้ต่อสาย USB เข้าคอม เครื่องจะไม่ถูกแฟลชอะไรทั้งนั้น)" />
+
+    <item
+        id="reboot_bootloader"
+        title="Bootloader Mode"
+        description="รีสตาร์ทเครื่องเข้าสู่ Bootloader Mode"
+        action="REBOOT_BOOTLOADER"
+        confirm="true"
+        warning="กล่องหลายรุ่นจะจอดำในโหมดนี้ ซึ่งเป็นปกติ ออกโดยถอดปลั๊กไฟแล้วเสียบใหม่ หรือสั่ง fastboot reboot จากคอม" />
+</menu>

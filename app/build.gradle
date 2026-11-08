@@ -1,0 +1,30 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.pkall.atvcontrol'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'com.pkall.atvcontrol'
+        minSdk 21          // Android 5.0+ : covers old True / AIS / Amlogic boxes
+        targetSdk 34
+        versionCode 1
+        versionName '1.0'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            // signs with the debug key so "Build APK" gives an installable file straight away
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+// no external libraries: builds offline once the Android SDK is installed

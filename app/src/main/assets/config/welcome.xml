@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<welcome version="1">
+    <title>ATV Control</title>
+
+    <description>
+        แอปสำหรับจัดการและตั้งค่า Android TV ผ่าน Local ADB
+    </description>
+
+    <instructions>
+        <line>1. กดปุ่ม CONNECT เพื่อเชื่อมต่อ ADB</line>
+        <line>2. เมื่อมีหน้าต่าง Allow USB debugging ให้เลือก Always allow from this computer</line>
+        <line>3. กด Allow เพื่ออนุญาตการเชื่อมต่อ</line>
+        <line>4. เมื่อสถานะขึ้น ADB CONNECTED แอปจะพร้อมใช้งาน</line>
+    </instructions>
+
+    <status>
+        <checking>Checking ADB...</checking>
+        <connecting>Connecting...</connecting>
+        <waiting>Waiting for authorization...</waiting>
+        <connected>ADB CONNECTED</connected>
+        <failed>ADB connection failed</failed>
+    </status>
+
+    <connectButton>CONNECT</connectButton>
+    <retryButton>RETRY</retryButton>
+</welcome>

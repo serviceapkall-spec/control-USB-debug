@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu id="usb" version="1" status="adb">
+    <title>USB Debugging</title>
+
+    <description>
+        เปิด / ปิด USB Debugging ของกล่อง
+        แอปจะสั่งเองโดยตรง จึงเปิดกลับได้แม้ ADB ปิดอยู่
+    </description>
+
+    <usage>
+        <line>1. ครั้งแรก: กลับไปหน้าแรกแล้วกด CONNECT ให้ขึ้น ADB CONNECTED ก่อน 1 ครั้ง แอปจะขอสิทธิ์ให้เอง</line>
+        <line>2. เมื่อสถานะขึ้นว่า "สิทธิ์ของแอป: พร้อม" ก็กดเปิด/ปิดได้เลย</line>
+        <line>3. ถ้ายังไม่มีสิทธิ์ แอปจะไม่ยอมให้ปิด เพราะจะเปิดกลับเองไม่ได้</line>
+    </usage>
+
+    <item
+        id="usb_off"
+        title="ปิด USB Debugging"
+        description="ปิดการดีบัก ลูกค้าเอาไปใช้ได้อย่างปลอดภัย"
+        action="USB_DEBUG_OFF"
+        confirm="true"
+        warning="หลังปิด แอปจะใช้เมนู DNS / Reboot ที่ต้องใช้ ADB ไม่ได้จนกว่าจะเปิดกลับ เปิดกลับได้จากเมนูนี้" />
+
+    <item
+        id="usb_on"
+        title="เปิด USB Debugging"
+        description="เปิดการดีบักกลับ (เปิด Developer options ให้ด้วย)"
+        action="USB_DEBUG_ON"
+        confirm="true" />
+</menu>
